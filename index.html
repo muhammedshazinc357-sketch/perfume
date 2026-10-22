@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10110f" />
+  <title>AURA — Fragrance, bottled</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="intro" id="intro" aria-label="AURA perfume intro animation">
+    <div class="drop-ring"><div class="drop-glow"></div></div>
+    <div class="intro-bottle" aria-hidden="true">
+      <div class="bottle-cap"></div>
+      <div class="bottle-neck"></div>
+      <div class="bottle-body"><span>AURA</span><small>EAU DE PARFUM</small></div>
+    </div>
+    <p class="intro-wordmark">A U R A</p>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#">AURA<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#collection">Collection</a><a href="#story">Our story</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SCENT IS A SIGNATURE</p>
+        <h1>Leave a little<br><em>mystery.</em></h1>
+        <p class="hero-text">Considered fragrances for the moments that become memories.</p>
+        <a class="button" href="#collection">Explore the collection <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="halo"></div>
+        <div class="hero-bottle bottle-amber">
+          <div class="cap"></div><div class="neck"></div><div class="glass"><div class="liquid"></div><div class="label"><b>AURA</b><small>NO. 01<br>AMBER / WOOD</small></div></div>
+        </div>
+        <span class="art-note">NO. 01 — AMBER WOOD</span>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span>MADE TO BE REMEMBERED</span></div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div class="section-heading"><div><p class="eyebrow">THE AURA EDIT</p><h2>Find your <em>notes.</em></h2></div><p>Three distinct moods.<br>One unmistakable presence.</p></div>
+      <div class="products">
+        <article class="product-card">
+          <div class="product-visual visual-amber"><div class="mini-bottle"><div class="mini-cap"></div><div class="mini-glass"><b>AURA</b><small>01</small></div></div><span>WARM / SPICED</span></div>
+          <div class="product-info"><div><h3>Amber No. 01</h3><p>Amber · Cedar · Vanilla</p></div><strong>₹2,490</strong></div>
+          <button class="add-button" data-product="Amber No. 01">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card">
+          <div class="product-visual visual-floral"><div class="mini-bottle"><div class="mini-cap"></div><div class="mini-glass"><b>AURA</b><small>02</small></div></div><span>SOFT / FLORAL</span></div>
+          <div class="product-info"><div><h3>Petal No. 02</h3><p>Rose · Peony · Musk</p></div><strong>₹2,290</strong></div>
+          <button class="add-button" data-product="Petal No. 02">Add to bag <span>+</span></button>
+        </article>
+        <article class="product-card">
+          <div class="product-visual visual-fresh"><div class="mini-bottle"><div class="mini-cap"></div><div class="mini-glass"><b>AURA</b><small>03</small></div></div><span>BRIGHT / FRESH</span></div>
+          <div class="product-info"><div><h3>Coast No. 03</h3><p>Bergamot · Sea salt · Sage</p></div><strong>₹2,390</strong></div>
+          <button class="add-button" data-product="Coast No. 03">Add to bag <span>+</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="story"><p class="eyebrow">A QUIETER KIND OF LUXURY</p><h2>Made for the<br> moments <em>between.</em></h2><p>Thoughtfully composed scents, beautifully simple bottles, and room for your own story.</p></section>
+  </main>
+  <footer id="contact"><a class="brand" href="#">AURA<span>.</span></a><p>Fragrance, bottled with feeling.</p><small>© <span id="year"></span> AURA. Demo storefront.</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
